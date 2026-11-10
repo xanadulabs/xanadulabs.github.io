@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xanadu Labs</title>
+<meta name="description" content="Games and tools from Xanadu Labs.">
+<link rel="icon" href="icons/fall-line.png">
+<style>
+  :root {
+    --bg: #faf8f4;
+    --ink: #1d1b18;
+    --muted: #6b665e;
+    --rule: #e4dfd6;
+    --link: #1d1b18;
+    --accent: #b5482e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151413;
+      --ink: #ece8e1;
+      --muted: #9a948a;
+      --rule: #2c2a27;
+      --link: #ece8e1;
+      --accent: #e0805f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 ui-sans-serif, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: clamp(3rem, 12vh, 7rem) 1rem 4rem;
+  }
+  h1 {
+    margin: 0 0 .35rem;
+    font: 600 2rem/1.15 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    letter-spacing: -.01em;
+  }
+  .lede { margin: 0 0 3rem; color: var(--muted); }
+  h2 {
+    margin: 0 0 1rem;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  ul { list-style: none; margin: 0 0 3rem; padding: 0; }
+  li {
+    display: grid;
+    grid-template-columns: 1.15em 1fr;
+    column-gap: .75rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  li:last-child { border-bottom: 1px solid var(--rule); }
+  li img {
+    width: 1.15em;
+    height: 1.15em;
+    margin-top: .25em;
+    border-radius: 3px;
+  }
+  li img.pixel { image-rendering: pixelated; }
+  .name { font-weight: 600; }
+  .what { color: var(--muted); }
+  .links { margin-top: .2rem; font-size: .9rem; }
+  .links a + a { margin-left: 1.1rem; }
+  a {
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-underline-offset: .2em;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-color .15s;
+  }
+  a:hover, a:focus-visible { text-decoration-color: var(--accent); }
+  footer { font-size: .85rem; color: var(--muted); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Xanadu Labs</h1>
+  <p class="lede">Small games and tools, made with care.</p>
+
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <img src="icons/gunship-ace.png" alt="">
+      <div>
+        <div><span class="name">Gunship Ace</span></div>
+        <div class="what">A top-down attack-helicopter game. Fly a Mi-24 Hind through four missions, and flip jeeps with the rotor wash.</div>
+        <div class="links"><a href="/gunship-ace/">Play in browser</a><a href="https://github.com/xanadulabs/gunship-ace">Source</a></div>
+      </div>
+    </li>
+    <li>
+      <img class="pixel" src="icons/fall-line.png" alt="">
+      <div>
+        <div><span class="name">Fall Line</span></div>
+        <div class="what">The snow left. The hill stayed. A downhill dodge on a dry mountain, on a skateboard, a mountain bike or a motorbike.</div>
+        <div class="links"><a href="/fall-line/">Play in browser</a><a href="https://github.com/xanadulabs/fall-line">Source</a></div>
+      </div>
+    </li>
+    <li>
+      <img src="icons/sinopia.png" alt="">
+      <div>
+        <div><span class="name">Sinopia</span></div>
+        <div class="what">A layered image compositor. Your picture is a folder of PNGs, so it stays yours. Opens and saves PSD.</div>
+        <div class="links"><a href="https://github.com/xanadulabs/sinopia">Source</a></div>
+      </div>
+    </li>
+  </ul>
+
+  <footer><a href="https://github.com/xanadulabs">github.com/xanadulabs</a></footer>
+</main>
+</body>
+</html>
